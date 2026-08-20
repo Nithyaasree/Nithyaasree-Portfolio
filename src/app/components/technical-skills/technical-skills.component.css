@@ -1,0 +1,15 @@
+:host { display: block; }
+.section { max-width: 1240px; margin: 0 auto; padding: 5rem 2rem; }
+.section-heading { display: flex; flex-direction: column; gap: 0.7rem; margin-bottom: 2rem; }
+.section-number { margin: 0; color: #7e8bff; font: 700 0.72rem/1.2 'IBM Plex Mono', monospace; letter-spacing: 0.16em; text-transform: uppercase; }
+h2 { max-width: 740px; margin: 0; color: #fff; font: 700 clamp(2rem, 3vw, 3rem)/1.05 'Space Grotesk', sans-serif; }
+.skills-grid { display: grid; grid-template-columns: repeat(4, 1fr); align-items: start; gap: 1rem; }
+.skill-group { align-self: start; min-height: 84px; height: fit-content; padding: 0; border-radius: 20px; background: rgba(20, 24, 54, 0.86); border: 1px solid rgba(255, 255, 255, 0.08); box-shadow: 0 18px 35px rgba(8, 10, 20, 0.25); overflow: hidden; transition: border-color 0.25s ease, background 0.25s ease; }
+.skill-group.expanded { background: rgba(28, 33, 70, 0.96); border-color: rgba(125, 134, 255, 0.45); }
+.skill-toggle { display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 84px; padding: 1.3rem; border: 0; background: transparent; color: #cbd4ff; cursor: pointer; text-align: left; font: 600 1rem/1.2 'Space Grotesk', sans-serif; }
+.skill-toggle:hover, .skill-toggle:focus-visible { color: #fff; }
+.toggle-icon { color: #7e8bff; font: 400 1.5rem/1 'IBM Plex Mono', monospace; }
+.skill-list { display: flex; flex-wrap: wrap; gap: 0.45rem; padding: 0 1.3rem 1.3rem; }
+.skill-list span { padding: 0.4rem 0.5rem; border-radius: 999px; background: rgba(94, 110, 255, 0.12); color: #cbd4ff; font: 0.65rem/1.2 'IBM Plex Mono', monospace; }
+@media (max-width: 900px) { .skills-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .section { padding: 4rem 1.5rem; } .skills-grid { grid-template-columns: 1fr; } }

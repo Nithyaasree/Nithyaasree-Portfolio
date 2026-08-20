@@ -1,0 +1,15 @@
+:host { display: block; }
+.section-shell { max-width: 1200px; margin: 0 auto; padding: 4.5rem 2rem 6rem; }
+.section-header { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem; }
+.section-header span { color: #7e8bff; font: 0.82rem/1.2 'IBM Plex Mono', monospace; letter-spacing: 0.24em; text-transform: uppercase; }
+.section-header h2 { margin: 0; color: #fff; font: 700 clamp(2rem, 3vw, 2.8rem)/1.1 'Space Grotesk', sans-serif; }
+.contact-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 1.5rem; }
+.contact-card { padding: 2rem; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 28px; background: rgba(16, 20, 42, 0.9); box-shadow: 0 22px 45px rgba(8, 11, 23, 0.26); }
+.contact-card h3 { margin-top: 0; color: #fff; font: 600 1.3rem/1.2 'Space Grotesk', sans-serif; }
+.contact-card p, .contact-card li { color: #c8cff7; font: 0.9rem/1.8 'IBM Plex Mono', monospace; }
+.contact-card ul { margin: 1.5rem 0 0; padding: 0; list-style: none; }
+.contact-card li { margin-bottom: 0.85rem; }
+.contact-card a { color: #b6c3ff; text-decoration: none; }
+.secondary-btn { display: inline-flex; margin-top: 1.5rem; padding: 0.95rem 1.35rem; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 999px; color: #e8ebff; font: 600 0.78rem/1 'IBM Plex Mono', monospace; }
+.secondary-btn:hover { background: rgba(112, 118, 255, 0.15); }
+@media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }

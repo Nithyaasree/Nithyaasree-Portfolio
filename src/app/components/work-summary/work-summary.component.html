@@ -1,0 +1,11 @@
+<section id="experience" class="section" aria-labelledby="experience-title">
+  <div class="section-heading"><p class="section-number">03 / EXPERIENCE</p><div><h2 id="experience-title">Building, Modernizing, and Delivering Enterprise Software Solutions</h2><p class="section-intro">Selected responsibilities and delivery areas from professional experience.</p></div></div>
+  <div class="experience-list">
+    @for (item of experiences; track item.company + item.period) {
+      <article class="experience-item">
+        <div class="experience-meta"><span>{{ item.period }}</span><span>{{ item.location || 'Professional experience' }}</span></div>
+        <div class="experience-content"><h3>{{ item.company }}</h3><p class="role">{{ item.role }}</p>@if (item.project) { <p class="project">Project: {{ item.project }}</p> }<div class="technologies">@for (technology of item.technologies; track technology) { <span>{{ technology }}</span> }</div><ul>@for (highlight of item.highlights; track highlight) { <li>{{ highlight }}</li> }</ul></div>
+      </article>
+    }
+  </div>
+</section>

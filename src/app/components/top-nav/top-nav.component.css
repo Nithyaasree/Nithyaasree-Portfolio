@@ -1,0 +1,14 @@
+:host { display: block; position: sticky; top: 0; z-index: 20; width: 100%; background: rgba(6, 7, 15, 0.92); }
+
+.top-nav { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; }
+.brand { max-width: 390px; color: #9bb0ff; font: 700 1.45rem/1.35 'Space Grotesk', sans-serif; letter-spacing: 0.18em; text-transform: uppercase; text-decoration: none; }
+.desktop-nav { display: flex; align-items: center; gap: 1.25rem; }
+.desktop-nav a { color: #d6dbff; font: 0.95rem/1.3 'Space Grotesk', sans-serif; text-decoration: none; }
+.desktop-nav a:hover, .desktop-nav a:focus-visible { color: #fff; }
+.contact-link { padding: 0.75rem 1rem; border: 1px solid rgba(255, 255, 255, 0.14); border-radius: 999px; color: #e5e9ff; font: 600 0.8rem/1 'IBM Plex Mono', monospace; text-decoration: none; white-space: nowrap; }
+.contact-link:hover, .contact-link:focus-visible { background: rgba(255, 255, 255, 0.08); }
+.menu-icon { display: none; width: 1.6rem; }
+.menu-icon span { display: block; height: 2px; margin: 0.25rem 0; background: #f5f7ff; }
+
+@media (max-width: 900px) { .desktop-nav, .contact-link { display: none; } .menu-icon { display: block; } }
+@media (max-width: 600px) { .top-nav { padding: 1rem 1.25rem; } .brand { font-size: 1rem; letter-spacing: 0.14em; } }

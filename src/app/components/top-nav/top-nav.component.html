@@ -1,0 +1,12 @@
+<header class="top-nav">
+  <a class="brand" href="#home" aria-label="FullStack Developer Portfolio home">
+    FullStack Developer Portfolio
+  </a>
+  <nav class="desktop-nav" aria-label="Primary navigation">
+    @for (link of links; track link.target) {
+      <a [href]="'#' + link.target">{{ link.label }}</a>
+    }
+  </nav>
+  <a class="contact-link" href="mailto:sreenithya2311@gmail.com" aria-label="Contact Nithiyaa Sree">Let's connect</a>
+  <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+</header>

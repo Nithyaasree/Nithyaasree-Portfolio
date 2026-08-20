@@ -1,0 +1,17 @@
+<section id="skills" class="section" aria-labelledby="skills-title">
+  <div class="section-heading"><p class="section-number">02 / CAPABILITY</p><h2 id="skills-title">Technical skills with an enterprise perspective.</h2></div>
+  <div class="skills-grid">
+    @for (group of skillGroups; track group.label) {
+      <article class="skill-group" [class.expanded]="expandedGroupIndex === $index">
+        <button class="skill-toggle" type="button" [attr.aria-expanded]="expandedGroupIndex === $index" [attr.aria-controls]="'skills-' + $index" (click)="toggleGroup($index)">
+          <span>{{ group.label }}</span><span class="toggle-icon" aria-hidden="true">{{ expandedGroupIndex === $index ? '−' : '+' }}</span>
+        </button>
+        @if (expandedGroupIndex === $index) {
+          <div class="skill-list" [id]="'skills-' + $index">
+            @for (skill of group.skills; track skill) { <span>{{ skill }}</span> }
+          </div>
+        }
+      </article>
+    }
+  </div>
+</section>

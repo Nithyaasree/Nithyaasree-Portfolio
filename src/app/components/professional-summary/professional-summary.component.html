@@ -1,0 +1,21 @@
+<section id="home" class="summary-section" aria-labelledby="summary-title">
+  <div class="hero-avatar-shell"><img class="hero-avatar" src="/images/profile-photo.jpg" alt="Profile photo of Nithiyaa Sree Vasudevananth Rajalakshmi"></div>
+  <aside class="summary-panel" aria-label="Professional focus"><span class="panel-orbit orbit-one"></span><span class="panel-orbit orbit-two"></span><span class="panel-orbit orbit-three"></span><div class="panel-label">DELIVERING</div><div class="panel-line"></div><p>{{ typedText }}<span class="cursor">|</span></p><div class="panel-footer">C# <span>•</span> Angular <span>•</span> SQL</div></aside>
+  <div class="summary-copy">
+    <h2 class="kicker">Hi, I am</h2>
+    <h1 id="summary-title">{{ profile.name }}</h1>
+    <h2>{{ profile.title }}</h2>
+    <p class="lead">{{ summary[0] }}</p>
+    <div class="summary-actions">
+      <a class="primary-action" href="mailto:{{ profile.email }}">Download Resume</a>
+      <div class="social-buttons"><a [href]="profile.linkedin" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:{{ profile.email }}">Email</a></div>
+    </div>
+  </div>
+</section>
+<section class="summary-details" aria-label="Professional summary details">
+  @for (paragraph of summary.slice(1); track paragraph) { <p>{{ paragraph }}</p> }
+</section>
+<section id="about" class="about-section" aria-labelledby="about-title">
+  <div class="section-header"><span>About Me</span><h2 id="about-title">Developer Summary</h2></div>
+  <div class="about-grid"><article class="glass-panel"><h3>.NET Full Stack Developer</h3><p>{{ summary[0] }}</p></article><article class="glass-panel"><p>{{ summary[1] }}</p><p>{{ summary[2] }}</p></article></div>
+</section>

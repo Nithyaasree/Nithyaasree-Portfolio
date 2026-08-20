@@ -1,0 +1,20 @@
+:host { display: block; background: linear-gradient(180deg, rgba(9, 10, 22, 0.9), rgba(3, 6, 18, 1)); border-top: 1px solid rgba(255, 255, 255, 0.05); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+.section { max-width: 1240px; margin: 0 auto; padding: 5rem 2rem; }
+.section-heading { display: flex; flex-direction: column; gap: 0.7rem; margin-bottom: 2.5rem; }
+.section-number { margin: 0; color: #7e8bff; font: 700 0.72rem/1.2 'IBM Plex Mono', monospace; letter-spacing: 0.16em; text-transform: uppercase; }
+h2 { max-width: 800px; margin: 0; color: #fff; font: 700 clamp(2rem, 3vw, 3rem)/1.05 'Space Grotesk', sans-serif; }
+.section-intro { max-width: 580px; margin: 0.8rem 0 0; color: #aeb8e9; font: 0.9rem/1.7 'IBM Plex Mono', monospace; }
+.experience-list { position: relative; display: grid; gap: 1.5rem; }
+.experience-list::before { content: ''; position: absolute; left: 1.2rem; top: 0; bottom: 0; width: 3px; border-radius: 999px; background: linear-gradient(180deg, #5d72ff, #9c6bff); }
+.experience-item { position: relative; display: grid; grid-template-columns: 0.32fr 1fr; gap: 2rem; padding-left: 3.5rem; }
+.experience-item::before { content: ''; position: absolute; left: 0.78rem; top: 1.7rem; width: 18px; height: 18px; border-radius: 50%; background: #a89cff; box-shadow: 0 0 0 8px rgba(107, 106, 255, 0.1); }
+.experience-meta { display: grid; align-content: start; gap: 0.5rem; padding-top: 1.7rem; color: #a9b0ff; font: 0.68rem/1.4 'IBM Plex Mono', monospace; }
+.experience-content { padding: 1.7rem; border-radius: 28px; background: rgba(13, 16, 33, 0.88); border: 1px solid rgba(255, 255, 255, 0.08); box-shadow: 0 24px 45px rgba(9, 11, 23, 0.28); backdrop-filter: blur(18px); }
+.experience-content h3 { margin: 0; color: #fff; font: 700 1.45rem/1.1 'Space Grotesk', sans-serif; }
+.role { margin: 0.45rem 0; color: #c5ccf2; font: 600 0.75rem/1.3 'IBM Plex Mono', monospace; }
+.project { margin: 0.7rem 0 1rem; color: #aeb8e9; font: 0.85rem/1.4 'IBM Plex Mono', monospace; }
+.technologies { display: flex; flex-wrap: wrap; gap: 0.45rem; margin: 1rem 0 1.2rem; }
+.technologies span { padding: 0.4rem 0.65rem; border-radius: 999px; background: rgba(94, 110, 255, 0.12); color: #c5d0ff; font: 0.65rem/1.1 'IBM Plex Mono', monospace; }
+ul { max-width: 760px; margin: 0; padding-left: 1.15rem; color: #d0d6ff; font: 0.85rem/1.7 'IBM Plex Mono', monospace; }
+li { margin: 0.35rem 0; padding-left: 0.2rem; }
+@media (max-width: 760px) { .section { padding: 4rem 1.5rem; } .experience-item { grid-template-columns: 1fr; gap: 0.6rem; } .experience-meta { grid-template-columns: 1fr 1fr; padding: 0 0 0 0.5rem; } }
