@@ -29,6 +29,10 @@ jobs:
       - name: Build Angular
         run: npm run build
 
+      - name: Check GitHub OIDC environment
+        run: |
+        echo "AWS_ROLE_ARN is configured: ${{ secrets.AWS_ROLE_ARN != '' }}"
+        echo "GitHub Actions OIDC URL: $ACTIONS_ID_TOKEN_REQUEST_URL"
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
