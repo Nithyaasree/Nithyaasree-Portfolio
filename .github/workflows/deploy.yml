@@ -20,7 +20,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           cache: npm
 
       - name: Install dependencies
@@ -28,17 +28,12 @@ jobs:
 
       - name: Build Angular
         run: npm run build
-
-      - name: Check GitHub OIDC environment
-        run: |
-        echo "AWS_ROLE_ARN is configured: ${{ secrets.AWS_ROLE_ARN != '' }}"
-        echo "GitHub Actions OIDC URL: $ACTIONS_ID_TOKEN_REQUEST_URL"
+        
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          role-to-assume: ${{ secrets.AWS_S3_ROLE_ARN }}
           aws-region: us-east-2
 
       - name: Deploy to S3
-        run: |
-          aws s3 sync dist/ s3://nithya-portfolio --delete
+        run: aws s3 sync dist/nithyaasree-portfolio/browser/ s3://nithya-portfolio --delete
