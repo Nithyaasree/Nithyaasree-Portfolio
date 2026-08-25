@@ -1,5 +1,4 @@
-import { Component, OnDestroy, OnInit, inject } from '@angular/core';
-import { PortfolioDataService } from '../../services/portfolio-data.service';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-professional-summary',
@@ -8,15 +7,23 @@ import { PortfolioDataService } from '../../services/portfolio-data.service';
   styleUrl: './professional-summary.component.css'
 })
 export class ProfessionalSummaryComponent implements OnInit, OnDestroy {
-  private readonly data = inject(PortfolioDataService);
   private typingTimer?: ReturnType<typeof setTimeout>;
   private phraseIndex = 0;
   private characterIndex = 0;
   private deleting = false;
   readonly deliveringPhrases = ['Secure APIs', 'AI workflows', 'Angular interfaces', 'Cloud-ready systems'];
   typedText = '';
-  readonly profile = this.data.profile;
-  readonly summary = this.data.summary;
+  readonly profile = {
+    name: 'Nithiyaa Sree Vasudevananth Rajalakshmi',
+    title: '.NET Full Stack Developer',
+    email: 'sreenithya2311@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/nithyaa-sree-vasudevananth-rajalakshmi-dotnetdeveloper'
+  };
+  readonly summary = [
+    'Senior .NET Full Stack Developer experienced in designing, developing, testing, deploying, and maintaining scalable enterprise web applications using Microsoft .NET technologies.',
+    'Strong expertise in C#, .NET Framework, .NET Core, ASP.NET Core, ASP.NET MVC, Web API, Entity Framework, Entity Framework Core, LINQ, SQL Server, Angular, JavaScript, HTML5, CSS3, Bootstrap, jQuery, and RESTful APIs.',
+    'Experienced in application security, cloud storage, AI-powered workflows, modern Angular interfaces, database optimization, and full SDLC delivery within Agile/Scrum teams.'
+  ];
 
   ngOnInit(): void {
     this.scheduleTyping();
