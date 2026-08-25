@@ -17,4 +17,6 @@ h2 { max-width: 800px; margin: 0; color: #fff; font: 700 clamp(2rem, 3vw, 3rem)/
 .technologies span { padding: 0.4rem 0.65rem; border-radius: 999px; background: rgba(94, 110, 255, 0.12); color: #c5d0ff; font: 0.65rem/1.1 'IBM Plex Mono', monospace; }
 ul { max-width: 760px; margin: 0; padding-left: 1.15rem; color: #d0d6ff; font: 0.85rem/1.7 'IBM Plex Mono', monospace; }
 li { margin: 0.35rem 0; padding-left: 0.2rem; }
+.show-more-button { margin-top: 1rem; padding: 0.65rem 0.9rem; border: 1px solid rgba(168, 156, 255, 0.45); border-radius: 8px; background: rgba(94, 110, 255, 0.12); color: #d7dcff; font: 600 0.72rem/1.2 'IBM Plex Mono', monospace; cursor: pointer; transition: background 160ms ease, border-color 160ms ease, color 160ms ease; }
+.show-more-button:hover, .show-more-button:focus-visible { border-color: #a89cff; background: rgba(94, 110, 255, 0.25); color: #fff; }
 @media (max-width: 760px) { .section { padding: 4rem 1.5rem; } .experience-item { grid-template-columns: 1fr; gap: 0.6rem; } .experience-meta { grid-template-columns: 1fr 1fr; padding: 0 0 0 0.5rem; } }

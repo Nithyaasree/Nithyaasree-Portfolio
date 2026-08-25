@@ -1,5 +1,5 @@
-import { Component, inject } from '@angular/core';
-import { PortfolioDataService } from '../../services/portfolio-data.service';
+import { Component } from '@angular/core';
+import { EducationItem } from '../../models/portfolio.model';
 
 @Component({
   selector: 'app-education',
@@ -8,5 +8,8 @@ import { PortfolioDataService } from '../../services/portfolio-data.service';
   styleUrl: './education.component.css'
 })
 export class EducationComponent {
-  readonly education = inject(PortfolioDataService).education;
+  readonly education: EducationItem[] = [
+    { degree: 'Master of Science in Information Technology', institution: 'SRM University', location: 'Chennai, Tamil Nadu, India', period: 'Jul 2016 - Apr 2018' },
+    { degree: 'Bachelor of Science in Computer Science', institution: 'Madras University', location: 'Chennai, Tamil Nadu, India', period: 'Jul 2013 - Apr 2016' }
+  ];
 }

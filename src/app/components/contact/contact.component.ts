@@ -1,5 +1,4 @@
-import { Component, inject } from '@angular/core';
-import { PortfolioDataService } from '../../services/portfolio-data.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -8,5 +7,9 @@ import { PortfolioDataService } from '../../services/portfolio-data.service';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
-  readonly profile = inject(PortfolioDataService).profile;
+  readonly profile = {
+    email: 'sreenithya2311@gmail.com',
+    phone: '+1 848-219-6633',
+    visaStatus: 'H4 EAD'
+  };
 }

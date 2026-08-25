@@ -4,7 +4,7 @@
     @for (item of experiences; track item.company + item.period) {
       <article class="experience-item">
         <div class="experience-meta"><span>{{ item.period }}</span><span>{{ item.location || 'Professional experience' }}</span></div>
-        <div class="experience-content"><h3>{{ item.company }}</h3><p class="role">{{ item.role }}</p>@if (item.project) { <p class="project">Project: {{ item.project }}</p> }<div class="technologies">@for (technology of item.technologies; track technology) { <span>{{ technology }}</span> }</div><ul>@for (highlight of item.highlights; track highlight) { <li>{{ highlight }}</li> }</ul></div>
+        <div class="experience-content"><h3>{{ item.company }}</h3><p class="role">{{ item.role }}</p>@if (item.project) { <p class="project">Project: {{ item.project }}</p> }<div class="technologies">@for (technology of item.technologies; track technology) { <span>{{ technology }}</span> }</div><ul>@for (highlight of item.highlights.slice(0, isExperienceExpanded($index) ? item.highlights.length : 3); track highlight) { <li>{{ highlight }}</li> }</ul>@if (item.highlights.length > 3) { <button class="show-more-button" type="button" [attr.aria-expanded]="isExperienceExpanded($index)" (click)="toggleExperience($index)">{{ isExperienceExpanded($index) ? 'Show less' : 'Show more' }} <span aria-hidden="true">{{ isExperienceExpanded($index) ? '↑' : '↓' }}</span></button> }</div>
       </article>
     }
   </div>
