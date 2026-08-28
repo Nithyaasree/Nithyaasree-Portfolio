@@ -43,7 +43,11 @@ export class WorkSummaryComponent {
         'Built reusable Angular 16+ components to accelerate front-end development.',
         'Participated in Agile/Scrum processes, CI/CD pipelines, and Docker-based deployments.',
         'Used SQL Server extensively to write complex queries, optimize stored procedures, and improve overall database performance.',
-        'Collaborated with cross-functional Agile teams, Product Owners, and QA to deliver features in bi-weekly sprints using Scrum.'
+        'Collaborated with cross-functional Agile teams, Product Owners, and QA to deliver features in bi-weekly sprints using Scrum.',
+        'Worked with AWS S3 for secure storage and retrieval of application files and documents, implementing appropriate access controls and bucket configurations.',
+        'Utilized AWS IAM to manage user roles, permissions, and access policies for secure application and AWS resource access.',
+        'Deployed and supported application workloads on AWS EC2, monitoring application availability and assisting with configuration and troubleshooting.'
+
 
       ]
     },
@@ -66,7 +70,10 @@ export class WorkSummaryComponent {
         'Used Agile (Scrum) methodology to support rapid and disciplined development throughout implementation.',
         'Led the integration of ASP.NET features into VBA systems, streamlining the user experience and cross-platform data handling.',
         'Applied design patterns, asynchronous processing, and multithreading to improve code performance and maintainability.',
-        'Communicated closely with system analysts to gather and refine requirements and ensure successful project delivery.'
+        'Communicated closely with system analysts to gather and refine requirements and ensure successful project delivery.',
+        'Utilized AWS S3 for storing and retrieving application files and data, supporting secure and scalable object storage.',
+        'Worked with AWS IAM to configure roles, permissions, and access policies following security and least-privilege practices.',
+        'Supported application deployment and hosting on AWS EC2, including environment configuration, application troubleshooting, and operational support.'
 
       ]
     },
