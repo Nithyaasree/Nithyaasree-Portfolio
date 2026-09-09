@@ -8,8 +8,10 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
   readonly profile = {
-    email: 'sreenithya2311@gmail.com',
-    phone: '+1 848-219-6633',
-    visaStatus: 'H4 EAD'
+    FullName: 'Nithiyaa Sree Vasudevananth Rajalakshmi',
+    email: '  sreenithya2311@gmail.com',
+    secondaryEmail: '  nithiyaasree2395@gmail.com',
+    phone: '  +1 848-219-6633',
+    visaStatus: '  H4 EAD'
   };
 }
