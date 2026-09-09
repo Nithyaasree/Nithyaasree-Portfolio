@@ -1,5 +1,5 @@
 :host { display: block; }
-.section-shell { max-width: 1200px; margin: 0 auto; padding: 4.5rem 2rem 6rem; }
+.section-shell { max-width: 1200px; margin: 0 auto; padding: 2rem 2rem 2rem; }
 .section-header { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem; }
 .section-header span { color: #7e8bff; font: 0.82rem/1.2 'IBM Plex Mono', monospace; letter-spacing: 0.24em; text-transform: uppercase; }
 .section-header h2 { margin: 0; color: #fff; font: 700 clamp(2rem, 3vw, 2.8rem)/1.1 'Space Grotesk', sans-serif; }
@@ -10,6 +10,14 @@
 .contact-card ul { margin: 1.5rem 0 0; padding: 0; list-style: none; }
 .contact-card li { margin-bottom: 0.85rem; }
 .contact-card a { color: #b6c3ff; text-decoration: none; }
-.secondary-btn { display: inline-flex; margin-top: 1.5rem; padding: 0.95rem 1.35rem; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 999px; color: #e8ebff; font: 600 0.78rem/1 'IBM Plex Mono', monospace; }
+.secondary-btn { display: inline-flex; margin-top: 1.5rem; padding: 0.95rem 1.35rem; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 999px; color: #e8ebff; font: 600 0.78rem/1 'IBM Plex Mono', monospace; cursor: pointer; }
 .secondary-btn:hover { background: rgba(112, 118, 255, 0.15); }
+.email-btn { background: linear-gradient(135deg, #7070ff 0%, #6b5dff 100%); border: none; color: #fff; }
+.email-btn:hover { background: linear-gradient(135deg, #8080ff 0%, #7b6dff 100%); }
+.email-selector { position: relative; display: inline-block; }
+.email-options { position: absolute; top: 100%; left: 0; margin-top: 0.5rem; background: rgba(16, 20, 42, 0.95); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 12px; box-shadow: 0 10px 30px rgba(8, 11, 23, 0.5); z-index: 10; }
+.email-options button { display: block; width: 100%; padding: 0.75rem 1.2rem; border: none; background: transparent; color: #b6c3ff; font: 0.85rem/1.4 'IBM Plex Mono', monospace; text-align: left; cursor: pointer; white-space: nowrap; }
+.email-options button:hover { background: rgba(112, 118, 255, 0.2); color: #e8ebff; }
+.email-options button:first-child { border-radius: 11px 11px 0 0; }
+.email-options button:last-child { border-radius: 0 0 11px 11px; }
 @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }

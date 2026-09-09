@@ -7,7 +7,7 @@
     <h2>{{ profile.title }}</h2>
      <div class="summary-actions">
       <a class="primary-action" href="/resume/Portfolio%20resume.pdf" download="Nithiyaa sree_dotnet_fullStack_developer.pdf">Download Resume</a>
-      <div class="social-buttons"><a [href]="profile.linkedin" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:{{ profile.email }}">Email</a></div>
+      <div class="social-buttons"><a [href]="profile.linkedin" target="_blank" rel="noopener">LinkedIn</a><div class="email-selector"><button class="email-link" (click)="toggleEmailOptions()">Email</button>@if (showEmailOptions) {<div class="email-options"><button (click)="selectEmail(profile.email)">{{ profile.email }}</button><button (click)="selectEmail(profile.secondaryEmail)">{{ profile.secondaryEmail }}</button></div>}</div></div>
     </div>
   </div>
 </section>

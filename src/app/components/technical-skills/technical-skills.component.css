@@ -1,5 +1,5 @@
 :host { display: block; }
-.section { max-width: 1240px; margin: 0 auto; padding: 5rem 2rem; }
+.section { max-width: 1240px; margin: 0 auto; padding: 2rem 2rem; }
 .section-heading { display: flex; flex-direction: column; gap: 0.7rem; margin-bottom: 2rem; }
 .section-number { margin: 0; color: #7e8bff; font: 700 0.72rem/1.2 'IBM Plex Mono', monospace; letter-spacing: 0.16em; text-transform: uppercase; }
 h2 { max-width: 740px; margin: 0; color: #fff; font: 700 clamp(2rem, 3vw, 3rem)/1.05 'Space Grotesk', sans-serif; }

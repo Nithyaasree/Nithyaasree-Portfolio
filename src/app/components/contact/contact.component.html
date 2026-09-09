@@ -3,11 +3,22 @@
   <div class="contact-grid">
     <article class="contact-card"><h3>Contact Information</h3><p>Open to opportunities for backend and front-end engineering roles, cloud modernization, and AI-enabled application development.</p>
       <ul>
-        <li><strong>Full Name:</strong> {{ profile.FullName }}</li>
-         <li><strong>Primary Email:</strong> <a [href]="'mailto:' + profile.email">{{ profile.email }}</a></li>
-        <li><strong>Secondary Email:</strong> <a [href]="'mailto:' + profile.email">{{ profile.email }}</a></li>
+        <p><strong>Full Name:</strong> {{ profile.FullName }}</p>
         <li><strong>Phone:</strong> <a [href]="'tel:' + profile.phone">{{ profile.phone }}</a></li>
         <li><strong>Visa Status:</strong> {{ profile.visaStatus }}</li></ul></article>
-    <article class="contact-card"><h3>Message</h3><p>Use this section to connect. Email me directly for new opportunities.</p><a class="secondary-btn" [href]="'mailto:' + profile.email">Email Me</a></article>
+     <article class="contact-card"><h3>Message</h3>
+        <p>Use this section to connect. Please email me directly for new opportunities.</p>
+        <p><strong>Primary Email:</strong> <a [href]="'mailto:' + profile.email">{{ profile.email }}</a></p>
+        <p><strong>Secondary Email:</strong> <a [href]="'mailto:' + profile.secondaryEmail">{{ profile.secondaryEmail }}</a></p>
+        <div class="email-selector">
+          <button class="secondary-btn email-btn" (click)="toggleEmailOptions()">Email Me</button>
+          @if (showEmailOptions) {
+            <div class="email-options">
+              <button (click)="selectEmail(profile.email)">{{ profile.email }}</button>
+              <button (click)="selectEmail(profile.secondaryEmail)">{{ profile.secondaryEmail }}</button>
+            </div>
+          }
+        </div>
+    </article>
   </div>
 </section>
