@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-professional-summary',
@@ -11,12 +11,14 @@ export class ProfessionalSummaryComponent implements OnInit, OnDestroy {
   private phraseIndex = 0;
   private characterIndex = 0;
   private deleting = false;
+  showEmailOptions = false;
   readonly deliveringPhrases = ['Secure APIs', 'AI workflows', 'Angular interfaces', 'Cloud-ready systems'];
   typedText = '';
   readonly profile = {
     name: 'Nithiyaa Sree',
     title: '.NET Full Stack Developer',
     email: 'sreenithya2311@gmail.com',
+    secondaryEmail: 'nithiyaasree2395@gmail.com',
     linkedin: 'https://www.linkedin.com/in/nithyaa-sree-vasudevananth-rajalakshmi-dotnetdeveloper'
   };
   readonly summary = [
@@ -33,6 +35,27 @@ export class ProfessionalSummaryComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     if (this.typingTimer) {
       clearTimeout(this.typingTimer);
+    }
+  }
+
+  toggleEmailOptions(): void {
+    this.showEmailOptions = !this.showEmailOptions;
+  }
+
+  closeEmailOptions(): void {
+    this.showEmailOptions = false;
+  }
+
+  selectEmail(email: string): void {
+    window.location.href = `mailto:${email}`;
+    this.showEmailOptions = false;
+  }
+
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent): void {
+    const target = event.target as HTMLElement;
+    if (!target.closest('.email-selector')) {
+      this.closeEmailOptions();
     }
   }
 
