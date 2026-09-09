@@ -71,7 +71,7 @@ export class WorkSummaryComponent {
     },
     
     {
-      company: 'iBeris Global LLC', location: 'Edison, NJ', role: 'volunteer .NET Developer', period: 'Sep 2022 - Aug 2024', technologies: ['C#', '.NET Framework', 'ASP.NET MVC', '.NET Web API', 'Dapper', 'Angular', 'SQL Server', 'WCF', 'jQuery'], highlights: [
+      company: 'iBeris Global LLC', location: 'Edison, NJ', role: 'volunteer .NET Developer', period: 'Sep 2022 - Aug 2024', technologies: ['C#', '.NET Framework','AWS','AWS s3','AWS EC2','IAM Roles' ,'ASP.NET MVC', '.NET Web API', 'Angular', 'SQL Server', 'jQuery'], highlights: [
         'Developed web applications using C#, ASP.NET, .NET Framework, LINQ, SQL Server, and Entity Framework, ensuring responsive and interactive functionality.',
         'Developed Windows Forms applications using C# and .NET to create interactive and user-friendly desktop applications.',
         'Developed and maintained ASP.NET MVC applications and implemented caching, security, and performance optimization features.',
