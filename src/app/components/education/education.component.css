@@ -9,7 +9,7 @@ h2 { max-width: 750px; margin: 0; color: #fff; font: 700 clamp(2rem, 3vw, 3rem)/
 h3 { margin: 0; color: #fff; font: 700 1.25rem/1.2 'Space Grotesk', sans-serif; }
 .education-item p:last-child { margin: 0.5rem 0 0; color: #b9c2ee; font: 0.85rem/1.4 'IBM Plex Mono', monospace; }
 .education-item span { color: #8fa0ff; }
-.page-footer { display: flex; justify-content: space-between; gap: 1rem; padding: 4rem 0 1.5rem; color: #7e8baf; font: 0.65rem/1.2 'IBM Plex Mono', monospace; }
+.page-footer { display: flex; justify-content: center; gap: 1rem; padding: 4rem 0 1.5rem; color: #7e8baf; font: 1.2rem/1.2 'IBM Plex Mono', monospace; }
 .page-footer a { color: #aeb8e9; text-decoration: none; }
 .page-footer a:hover { color: #fff; }
 @media (max-width: 700px) { .section { padding: 4rem 1.5rem 1.5rem; } .education-item { grid-template-columns: 1fr; gap: 0.7rem; } .page-footer { flex-wrap: wrap; padding-top: 3rem; } }

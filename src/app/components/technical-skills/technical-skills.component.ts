@@ -13,8 +13,9 @@ export class TechnicalSkillsComponent {
     { label: '.NET & Backend', skills: ['.NET Framework', '.NET Core', 'ASP.NET Core', 'ASP.NET MVC', 'ASP.NET Web API', 'Entity Framework', 'Entity Framework Core', 'ADO.NET', 'LINQ', 'Razor Views', 'Blazor', 'WPF', 'WinForms'] },
     { label: 'Frontend', skills: ['Angular 10/13/14/16/18', 'React.js', 'Bootstrap 4/5', 'jQuery', 'AJAX', 'Telerik Controls'] },
     { label: 'Data', skills: ['Microsoft SQL Server', 'MySQL', 'PostgreSQL', 'T-SQL', 'Stored Procedures', 'Views', 'Functions'] },
-    { label: 'Cloud & DevOps', skills: ['AWS EC2', 'AWS S3', 'Azure DevOps', 'Git', 'TFS', 'CI/CD', 'Docker', 'NuGet'] },
+    { label: 'Cloud & DevOps', skills: ['AWS EC2','IAM Role' ,'AWS S3', 'Azure DevOps', 'Git', 'TFS', 'CI/CD', 'Docker', 'NuGet'] },
     { label: 'AI & Integration', skills: ['OpenAI API Integration', 'ML.NET', 'GenAI', 'RESTful APIs', 'FastAPI', 'Postgrid API', 'WCF', 'COM Interop'] },
+    { label: 'AI Tools', skills: ['ChatGPT', 'GitHub Copilot', 'Claude AI'] },
     { label: 'Security & Architecture', skills: ['OAuth', 'JWT', 'Role-Based Authorization', 'N-Tier Architecture', 'Microservices Architecture', 'MVC', 'OOP', 'Design Patterns'] },
     { label: 'Delivery', skills: ['Agile Scrum', 'SDLC', 'Asynchronous Programming', 'Multithreading', 'UAT', 'Postman', 'Jira', 'RedGate SQL Source Control'] }
   ];
