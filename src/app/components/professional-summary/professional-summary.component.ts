@@ -22,10 +22,11 @@ export class ProfessionalSummaryComponent implements OnInit, OnDestroy {
     linkedin: 'https://www.linkedin.com/in/nithyaa-sree-vasudevananth-rajalakshmi-dotnetdeveloper'
   };
   readonly summary = [
-    'Senior .NET Full Stack Developer experienced in designing, developing, testing, deploying, and maintaining scalable enterprise web applications using Microsoft .NET technologies and Angular .',
+    'Senior .NET Full Stack Developer experienced in designing, developing, testing, deploying, and maintaining scalable enterprise web applications using Microsoft .NET technologies and Angular.',
     'Strong expertise in C#, .NET Framework, .NET Core, ASP.NET Core, ASP.NET MVC, Web API, Entity Framework, Entity Framework Core, LINQ, SQL Server, Angular, JavaScript, HTML5, CSS3, Bootstrap, jQuery, and RESTful APIs.',
-    'Experienced in application security, cloud storage, AI-powered workflows, modern Angular interfaces, database optimization, and full SDLC delivery within Agile/Scrum teams.',
-    'Proficient with AI tools including ChatGPT, GitHub Copilot, and Claude AI for enhanced productivity, code generation, and intelligent problem-solving.'
+    'Experienced in application security, AWS cloud services, AI-powered application features, Angular interfaces, database development, and full SDLC delivery within Agile/Scrum teams.',
+    'Proficient with AI tools including ChatGPT, GitHub Copilot, and Claude AI for code generation, development assistance, debugging, and productivity.'
+
   ];
 
   ngOnInit(): void {
